@@ -65,6 +65,8 @@ Geen “AI-stijl” verraadt, maar wél ritme, nuance en overtuiging toont
 
 De contentbrief nauwgezet volgt
 
-De lezer vloeiend meeneemt naar de volgende sectie
+De lezer vloeiend meeneemt naar de volgende sectie.
+
+Maa gebrui van klassieke Markdown
 
 Begin nu.

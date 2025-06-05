@@ -12,7 +12,7 @@ def generate_sectioned_article(outline: str, model: str = "gpt-4.1-nano") -> str
 
 
     for section in outline:
-        article_text = "\n\n".join(article)
+        article_text = "\n".join(article)
         article_summary = generate_summary(article_text, model=model)
         #print(f"\n\nSummary: {article_summary} \n\n")
 
@@ -41,7 +41,7 @@ def generate_sectioned_article(outline: str, model: str = "gpt-4.1-nano") -> str
         article.append(to_add)
 
 
-    return "\n\n".join(article)
+    return "\n".join(article)
 
 def generate_section(summary: str, section_outline: str, last_paragraph: str, style_anchors: str, full_outline: str , min_words: int, max_words: int, model: str = "gpt-4.1-nano") -> str:
     """
