@@ -27,7 +27,7 @@ class SectionedArticleRequest(BaseModel):
 def generate_sectioned_article_endpoint(request: SectionedArticleRequest):
     article = generate_sectioned_article(
         outline=request.outline,
-        style_anchors=request.style_anchors,
+        #style_anchors=request.style_anchors,
         model=request.model,
     )
     return {"article": article}
