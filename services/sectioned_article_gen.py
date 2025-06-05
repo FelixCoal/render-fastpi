@@ -2,11 +2,14 @@ from utils.prompt_loader import load_prompt
 from utils.llm import call_openAI
 import json
 
-def generate_sectioned_article(outline: str, style_anchors: list, model: str = "gpt-4.1-nano") -> str:
+def generate_sectioned_article(outline: str, model: str = "gpt-4.1-nano") -> str:
     article = []
     outline = json.loads(outline)
     print(len(outline))
     print(outline)
+    
+    style_anchors = [['Ik heb ontdekt dat ik in een flow kom als ik kennis kan doorgronden en delen met anderen.', 'Fysiek werkt het voor mij om me af te sluiten met mijn noise-cancelling koptelefoon en vertrouwde muziek.', 'Qua omstandigheden werkt het als ik niet veel kleine to do s heb, maar juist tijd heb geblokkeerd in mijn agenda.'], ['Niet alleen horen, kijken, analyseren en verwerken, maar ook door de vele stimuli op het scherm, jouw eigen verschijning en veel andere factoren, maken het voor jouw hersenen zwaar.', 'Met de stofkam door de eigen agenda gaan zorgde ervoor dat 30% van de videocalls zijn omgezet naar Slack of e-mail.', 'Onderzoek laat daarnaast zien dat het kijken naar jouw eigen emoties, zoals angst of verdriet, deze emoties zelfs nóg veel meer kan versterken.'], ['Ondanks het stijgende bereik van de campagnes, blijkt na een maand de interactie met de advertenties af te nemen.', 'Het creëren van de juiste campagne is dan ook een continu proces.', 'Blind varen op deze targeting is een groot risico, dus overweeg tevens een iets bredere insteek van de campagne.', 'De tactiek waarbij je targeting op 25-35 jaar is ingesteld heeft 20% meer klikken opgeleverd.', 'Vol adrenaline vertel je blij aan de stakeholders dat je experiment heeft gewerkt.']]
+
 
     for section in outline:
         article_text = "\n\n".join(article)
@@ -40,7 +43,7 @@ def generate_sectioned_article(outline: str, style_anchors: list, model: str = "
 
     return "\n\n".join(article)
 
-def generate_section(summary: str, section_outline: str, last_paragraph: str, style_anchors: str, full_outline:str, min_words: int, max_words: int, model: str = "gpt-4.1-nano") -> str:
+def generate_section(summary: str, section_outline: str, last_paragraph: str, style_anchors: str, full_outline: str , min_words: int, max_words: int, model: str = "gpt-4.1-nano") -> str:
     """
     Generates a section of an article based on the provided outline and summary.
 
