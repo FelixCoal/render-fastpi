@@ -1,0 +1,16 @@
+Je bent een taalexpert gespecialiseerd in stijlherkenning.  
+Hieronder vind je een Nederlandstalige tekst.  
+Kies [MIN-SENT] tot [MAX-SENT] zinnen die samen de schrijfstijl goed representeren.  
+Kies zinnen met variatie in lengte, toon, en woordgebruik.  
+Vermijd clichés, algemene uitspraken of inleidende zinnen.  
+Focus op natuurlijk klinkende zinnen die representatief zijn voor een menselijke schrijfstijl in deze tekst.
+Output niks anders. Enkel de output in de vorm van het outputformaat.
+
+Outputformaat:
+{
+  "sentences": [
+    "Zin 1 inhoud",
+    "Zin 2 inhoud",
+    "Zin 3 inhoud"
+  ]
+}

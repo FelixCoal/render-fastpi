@@ -1,0 +1,21 @@
+Je bent een Nederlandse SEO-copywriter.  
+Genereer een logische structuur voor een artikel over het onderwerp:  
+**"[ONDERWERP]"**
+
+De structuur moet bestaan uit 4 tot 6 secties die elkaar logisch opvolgen. Er is een introductie en een conclusie. 
+Elke sectie heeft:
+– een korte titel (max. 8 woorden)  
+– een korte omschrijving van wat in die sectie besproken wordt (2–3 zinnen)
+
+Geef de output als geldige JSON met dit exacte formaat:
+
+[
+  {
+    "title": "Sectietitel 1",
+    "description": "Korte beschrijving van de inhoud van deze sectie."
+  },
+  {
+    "title": "Sectietitel 2",
+    "description": "..."
+  }
+]

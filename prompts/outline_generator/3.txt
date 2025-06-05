@@ -1,0 +1,42 @@
+Je bent een Nederlandse SEO-copywriter.  
+Genereer een logische structuur voor een artikel over het onderwerp:  
+**"[ONDERWERP]"**
+
+De structuur moet bestaan uit secties die elkaar logisch opvolgen. Er is een introductie en een conclusie. 
+Elke sectie heeft:
+– een korte titel (max. 8 woorden)  
+– een korte omschrijving van welke onderwerpen in deze sectie behandeld worden, dit mogen er zo weinig of zo veel zijn als nodig en logisch is.
+- begin met een inleiding, eindig met een conclusie.
+
+Geef de output als geldige JSON met dit exacte formaat:
+
+[
+  {
+    "title": "Introductie",
+    "type": "introduction",
+    "min_word_count" : estimated minimum word count,
+    "max_word_count" : estimated maximum word count,
+    "description": "Uitgebreide beschrijving van wat in deze sectie behandeld word"
+  },
+  {
+    "title": "Sectietitel 2",
+    "type": "normal",
+    "min_word_count" : estimated minimum word count,
+    "max_word_count" : estimated maximum word count,
+    "description": "Uitgebreide beschrijving van wat in deze sectie behandeld word"
+  },
+    {
+    "title": "Sectietitel 3",
+    "type": "normal",
+    "min_word_count" : estimated minimum word count,
+    "max_word_count" : estimated maximum word count,
+    "description": "Uitgebreide beschrijving van wat in deze sectie behandeld word"
+  },
+  {
+    "title": "Conclusie",
+    "type": "conclusion",
+    "min_word_count" : estimated minimum word count,
+    "max_word_count" : estimated maximum word count,
+    "description": "Uitgebreide beschrijving van wat in deze sectie behandeld word"
+  },
+]

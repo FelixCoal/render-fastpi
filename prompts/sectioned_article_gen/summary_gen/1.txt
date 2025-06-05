@@ -1,0 +1,16 @@
+Je bent redacteur van een langer artikel dat per sectie wordt opgebouwd.  
+Onderstaande tekst bevat de gegenereerde secties tot nu toe.
+
+Vat de inhoud samen in 3 tot 4 zinnen, zodat een copywriter de volgende sectie logisch kan laten aansluiten op de voorgaande inhoud.
+
+Let op:
+– De samenvatting is bedoeld als input voor een tekstgenerator  
+– Gebruik een neutrale stijl (geen marketingtaal of persoonlijke toon)  
+– Focus op de kernpunten per sectie, geen herhaling of stijlmiddelen  
+– Vermijd inleidende of afsluitende zinnen  
+– Geef alleen de inhoud weer, niet de schrijfstijl
+
+Artikel tot nu toe:
+[GEGENEREERDE_SECTIES_TOT_NU]
+
+Geef alleen de samenvatting. Geen extra uitleg of commentaar.
