@@ -21,13 +21,15 @@ class SectionedArticleRequest(BaseModel):
     outline: str
     #style_anchors: List[str]
     model: str | None = "gpt-4.1-nano"
+    model_summary: str | None = "gpt-4.1-nano"
 
 
 @app.post("/generate-sectioned-article")
 def generate_sectioned_article_endpoint(request: SectionedArticleRequest):
     article = generate_sectioned_article(
         outline=request.outline,
-        style_anchors=request.style_anchors,
+        #style_anchors=request.style_anchors,
         model=request.model,
+        model_summary=request.model_summary
     )
     return {"article": article}
