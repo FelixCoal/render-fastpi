@@ -13,7 +13,7 @@ def generate_sectioned_article(outline: str, model: str = "gpt-4.1-nano") -> str
 
     for section in outline:
         article_text = "\n".join(article)
-        article_summary = generate_summary(article_text, model=model)
+        article_summary = generate_summary(article_text, model="gpt-4o-mini")
         #print(f"\n\nSummary: {article_summary} \n\n")
 
         last_paragraph = article[-1] if article else ""
@@ -84,7 +84,7 @@ def generate_section(summary: str, section_outline: str, last_paragraph: str, st
 
     return response
 
-def generate_summary(text: str, model: str = "gpt-4.1-nano") -> str:
+def generate_summary(text: str, model: str = "gpt-4o-nano") -> str:
     """
     Generates a summary of the provided text.
 
