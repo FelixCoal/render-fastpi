@@ -17,13 +17,9 @@ def generate_sectioned_article(outline: str, model: str = "gpt-4.1-nano", model_
         #print(f"\n\nSummary: {article_summary} \n\n")
 
         last_paragraph = article[-1] if article else ""
-        section_outline = f"""
-        Title: {section['title']}
-        Description: {section['description']}
-        """
         section_text = generate_section(
             summary=article_summary,
-            section_outline=section_outline,
+            section_outline=section,
             last_paragraph=last_paragraph,
             style_anchors=style_anchors,
             full_outline=outline,
