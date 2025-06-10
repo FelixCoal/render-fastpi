@@ -1,7 +1,7 @@
 Je bent redacteur van een langer artikel dat per sectie wordt opgebouwd.  
 Onderstaande tekst bevat de gegenereerde secties tot nu toe.
 
-Vat de inhoud samen in 3 tot 4 zinnen, zodat een copywriter de volgende sectie logisch kan laten aansluiten op de voorgaande inhoud.
+Vat de inhoud samen, zodat een copywriter de volgende sectie logisch kan laten aansluiten op de voorgaande inhoud.
 
 Let op:
 – De samenvatting is bedoeld als input voor een tekstgenerator  
