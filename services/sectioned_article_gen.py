@@ -73,6 +73,8 @@ def generate_section(summary: str, section_outline: str, last_paragraph: str, st
         replacements=replacements
     )
 
+    print(prompt)
+
     #print(f"\n\n Prompt: {prompt}\n\n")
 
     # Call OpenAI API
