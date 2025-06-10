@@ -2,11 +2,14 @@ from utils.prompt_loader import load_prompt
 from utils.llm import call_openAI
 import json
 
-def generate_sectioned_article(outline: dict, model: str = "gpt-4.1-nano", model_summary: str = "gpt-4.1-nano") -> str:
-    article = []
-    outline = json.dumps(outline)
-    print(len(outline))
-    print(outline)
+def generate_sectioned_article(
+    outline: list,
+    model: str = "gpt-4.1-nano",
+    model_summary: str = "gpt-4.1-nano",
+) -> str:
+    """Generate a full article based on an outline."""
+    article: list[str] = []
+    outline_json = json.dumps(outline)
     
     style_anchors = [['Ik heb ontdekt dat ik in een flow kom als ik kennis kan doorgronden en delen met anderen.', 'Fysiek werkt het voor mij om me af te sluiten met mijn noise-cancelling koptelefoon en vertrouwde muziek.', 'Qua omstandigheden werkt het als ik niet veel kleine to do s heb, maar juist tijd heb geblokkeerd in mijn agenda.'], ['Niet alleen horen, kijken, analyseren en verwerken, maar ook door de vele stimuli op het scherm, jouw eigen verschijning en veel andere factoren, maken het voor jouw hersenen zwaar.', 'Met de stofkam door de eigen agenda gaan zorgde ervoor dat 30% van de videocalls zijn omgezet naar Slack of e-mail.', 'Onderzoek laat daarnaast zien dat het kijken naar jouw eigen emoties, zoals angst of verdriet, deze emoties zelfs nóg veel meer kan versterken.'], ['Ondanks het stijgende bereik van de campagnes, blijkt na een maand de interactie met de advertenties af te nemen.', 'Het creëren van de juiste campagne is dan ook een continu proces.', 'Blind varen op deze targeting is een groot risico, dus overweeg tevens een iets bredere insteek van de campagne.', 'De tactiek waarbij je targeting op 25-35 jaar is ingesteld heeft 20% meer klikken opgeleverd.', 'Vol adrenaline vertel je blij aan de stakeholders dat je experiment heeft gewerkt.']]
 
@@ -22,18 +25,14 @@ def generate_sectioned_article(outline: dict, model: str = "gpt-4.1-nano", model
             section_outline=section,
             last_paragraph=last_paragraph,
             style_anchors=style_anchors,
-            full_outline=outline,
+            full_outline=outline_json,
             min_words=section['min_word_count'],
             max_words=section['max_word_count'],
             model=model
         )
 
         # Append the generated section to the article
-        to_add = f"""
-        {section['title']}
-        {section_text}
-        """
-        #print(f"\n\n New Section: {to_add} \n\n")
+        to_add = f"{section['title']}\n{section_text}"
         article.append(to_add)
 
 
