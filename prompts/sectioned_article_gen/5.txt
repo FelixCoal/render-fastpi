@@ -8,8 +8,7 @@ Gebruik onderstaande contentbrief om stijl, doelgroep en richting scherp te houd
 
 "doelgroep": "[DOELGROEP]",
 "schrijfstijl": "[SCHRIJFSTIJL]",
-"zoekintentie": "[ZOEKINTENTIE]",
-"beschrijving": "[BESCHRIJVING]"
+"ArtikelIntentie": "[ARTIKELINTENTIE]"
 
 Stijlregels:
 Elke alinea volgt het zandloperprincipe:
@@ -32,6 +31,9 @@ Te formele, academische of overdreven gebalanceerde formuleringen.
 
 Schrijf alsof je één-op-één praat met de doelgroep. Geen toneel, geen opsmuk, wél overtuiging.
 
+Style anchors om te gebruiken:
+[STYLE_ANCHORS]
+
 Schrijftaak:
 Schrijf de volgende sectie van het artikel:
 
@@ -41,11 +43,9 @@ Type: [SECTION-TYPE] (introduction / normal / conclusion)
 
 Lengte: [MIN_WORDS]–[MAX_WORDS] woorden
 
-Beschrijving van de inhoud: [SECTION-DESCRIPTION]
+Beschrijving van de inhoud van deze sectie: [SECTION-DESCRIPTION]
 
 Context:
-Content Brief:
-[CONTENT_BRIEF]
 
 Samenvatting tot nu toe:
 [SUMMARY]
