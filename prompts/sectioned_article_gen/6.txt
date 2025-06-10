@@ -7,9 +7,6 @@ Zorg dat de tekst goed geformateerd is (gebruik ## bij tussenkopjes, witregels t
 Content Brief:
 Gebruik onderstaande contentbrief om stijl, doelgroep en richting scherp te houden:
 
-json
-Kopiëren
-Bewerken
 "doelgroep": "[DOELGROEP] (bijvoorbeeld: jonge ondernemers, 25–35 jaar, ambitieus, resultaatgericht)",
 "schrijfstijl": "[SCHRIJFSTIJL] (bijvoorbeeld: direct, persoonlijk, energiek, no-nonsense)",
 "ArtikelIntentie": "[ARTIKELINTENTIE] (bijvoorbeeld: inspireren tot gedragsverandering, informeren, activeren)"
