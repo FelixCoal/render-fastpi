@@ -30,7 +30,7 @@ Vermijd AI-signalen zoals:
 
 Te formele, academische of overdreven gebalanceerde formuleringen.
 
-Schrijf alsof je één-op-één praat met de doelgroep. Geen toneel, geen opsmuk, wél overtuiging.
+Schrijf alsof je één-op-één praat met de doelgroep. Geen toneel, geen opsmuk.
 
 Style anchors om te gebruiken:
 [STYLE_ANCHORS]
