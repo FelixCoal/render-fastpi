@@ -19,7 +19,7 @@ def read_item(item_id: int, q: Optional[str] = None):
 
 class SectionedArticleRequest(BaseModel):
     outline: str
-    style_anchors: List[str]
+    #style_anchors: List[str]
     model: str | None = "gpt-4.1-nano"
 
 
