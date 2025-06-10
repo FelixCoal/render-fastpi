@@ -52,7 +52,7 @@ def generate_section(summary: str, section_outline: str, last_paragraph: str, st
     Returns:
         str: The generated section text.
     """
-    section_outline = json.loads(section_outline)
+    #section_outline = json.loads(section_outline)
 
     # Load prompt
     replacements = {
