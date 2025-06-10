@@ -2,7 +2,7 @@ from utils.prompt_loader import load_prompt
 from utils.llm import call_openAI
 import json
 
-def generate_sectioned_article(outline: str, model: str = "gpt-4.1-nano") -> str:
+def generate_sectioned_article(outline: str, model: str = "gpt-4.1-nano", model_summary: str = "gpt-4.1-nano") -> str:
     article = []
     outline = json.loads(outline)
     print(len(outline))
@@ -13,7 +13,7 @@ def generate_sectioned_article(outline: str, model: str = "gpt-4.1-nano") -> str
 
     for section in outline:
         article_text = "\n".join(article)
-        article_summary = generate_summary(article_text, model="gpt-4o-mini")
+        article_summary = generate_summary(article_text, model=model_summary)
         #print(f"\n\nSummary: {article_summary} \n\n")
 
         last_paragraph = article[-1] if article else ""
@@ -43,7 +43,7 @@ def generate_sectioned_article(outline: str, model: str = "gpt-4.1-nano") -> str
 
     return "\n".join(article)
 
-def generate_section(summary: str, section_outline: str, last_paragraph: str, style_anchors: str, full_outline: str , min_words: int, max_words: int, model: str = "gpt-4.1-nano", model_summary: str ="gpt-4.1-nano" ) -> str:
+def generate_section(summary: str, section_outline: str, last_paragraph: str, style_anchors: str, full_outline: str , min_words: int, max_words: int, model: str = "gpt-4.1-nano") -> str:
     """
     Generates a section of an article based on the provided outline and summary.
 
