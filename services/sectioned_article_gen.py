@@ -2,9 +2,9 @@ from utils.prompt_loader import load_prompt
 from utils.llm import call_openAI
 import json
 
-def generate_sectioned_article(outline: str, model: str = "gpt-4.1-nano", model_summary: str = "gpt-4.1-nano") -> str:
+def generate_sectioned_article(outline: dict, model: str = "gpt-4.1-nano", model_summary: str = "gpt-4.1-nano") -> str:
     article = []
-    outline = json.loads(outline)
+    outline = json.dumps(outline)
     #print(len(outline))
     #print(outline)
     
@@ -16,7 +16,6 @@ def generate_sectioned_article(outline: str, model: str = "gpt-4.1-nano", model_
         article_summary = generate_summary(article_text, model=model_summary)
         #print(f"\n\nSummary: {article_summary} \n\n")
         print(section)
-        section = json.loads(section)
         last_paragraph = article[-1] if article else ""
         section_text = generate_section(
             summary=article_summary,

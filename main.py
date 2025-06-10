@@ -18,7 +18,7 @@ def read_item(item_id: int, q: Optional[str] = None):
     return {"item_id": item_id, "q": q}
 
 class SectionedArticleRequest(BaseModel):
-    outline: str
+    outline: List[dict]
     #style_anchors: List[str]
     model: str | None = "gpt-4.1-nano"
     model_summary: str | None = "gpt-4.1-nano"
