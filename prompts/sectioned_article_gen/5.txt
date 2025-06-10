@@ -11,8 +11,8 @@ Gebruik onderstaande contentbrief om stijl, doelgroep en richting scherp te houd
 "ArtikelIntentie": "[ARTIKELINTENTIE]"
 
 Stijlregels:
-Elke alinea volgt het zandloperprincipe:
-Begin breed (inzicht/context), zoom in (voorbeeld of detail), eindig breed (gevolg/conclusie).
+
+Hanteer een hoge informatiedichtheid
 
 Wissel lange zinnen voor uitleg af met korte zinnen voor ritme of nadruk.
 Laat korte zinnen af en toe op zichzelf staan.
@@ -67,6 +67,8 @@ De contentbrief nauwgezet volgt
 
 De lezer vloeiend meeneemt naar de volgende sectie.
 
-Maa gebrui van klassieke Markdown
+Maakt gebruik van Markdown
+
+Heeft een hoge informatiedichtheid
 
 Begin nu.
