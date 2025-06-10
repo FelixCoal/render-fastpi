@@ -40,7 +40,7 @@ def generate_sectioned_article(outline: str, model: str = "gpt-4.1-nano", model_
     return "\n".join(article)
 
 def generate_section(summary: str, section_outline: str, last_paragraph: str, style_anchors: str, full_outline: str , min_words: int, max_words: int, model: str = "gpt-4.1-nano") -> str:
-    print("Generating section...")
+    print("\n\n\nGenerating section...\n\n\n")
     """
     Generates a section of an article based on the provided outline and summary.
 
