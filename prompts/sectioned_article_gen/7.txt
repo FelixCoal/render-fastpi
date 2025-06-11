@@ -37,10 +37,10 @@ Schrijf een **inhoudelijk sterke en natuurlijk lezende sectie** die zelfstandig 
 [STYLE_ANCHORS]
 
 ## Schrijftaak
-**Titel:** [SECTION-TITLE]  
-**Type:** [SECTION-TYPE] (introduction / normal / conclusion)  
-**Lengte:** [MIN_WORDS]–[MAX_WORDS] woorden  
-**Beschrijving:** [SECTION-DESCRIPTION]
+**Sectie Titel:** [SECTION-TITLE]  
+**Sectie Type:** [SECTION-TYPE] (introduction / normal / conclusion)  
+**Sectie Lengte:** [MIN_WORDS]–[MAX_WORDS] woorden  
+**Sectie Beschrijving/ wat moet er in deze sectie besproken worden:** [SECTION-DESCRIPTION]
 
 ## Context
 **Samenvatting tot nu toe:**  
