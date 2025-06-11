@@ -34,7 +34,7 @@ def generate_sectioned_article_endpoint(request: SectionedArticleRequest):
         #style_anchors=request.style_anchors#,
         model=request.model,
         model_summary=request.model_summary,
-        targetgAudience=request.targetAudience,
+        targetAudience=request.targetAudience,
         articleIntent=request.articleIntent,
         writingTone=request.writingTone,
         writersPersona=request.writersPersona
