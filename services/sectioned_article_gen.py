@@ -6,7 +6,12 @@ def generate_sectioned_article(
     outline: list,
     model: str = "gpt-4.1-nano",
     model_summary: str = "gpt-4.1-nano",
+    targetAudience: str = "general public",
+    articleIntent: str = "informative",
+    writingTone: str = "neutral",
+    writersPersona: str = "expert in the field"
 ) -> str:
+    
     """Generate a full article based on an outline."""
     article: list[str] = []
     outline_json = json.dumps(outline)
@@ -28,6 +33,10 @@ def generate_sectioned_article(
             full_outline=outline_json,
             min_words=section['min_word_count'],
             max_words=section['max_word_count'],
+            targetAudience=targetAudience,
+            articleIntent=articleIntent,
+            writingTone=writingTone,
+            writersPersona=writersPersona,
             model=model
         )
 
@@ -38,7 +47,20 @@ def generate_sectioned_article(
 
     return "\n".join(article)
 
-def generate_section(summary: str, section_outline: str, last_paragraph: str, style_anchors: str, full_outline: str , min_words: int, max_words: int, model: str = "gpt-4.1-nano") -> str:
+def generate_section(
+        summary: str, 
+        section_outline: str, 
+        last_paragraph: str, 
+        style_anchors: str, 
+        full_outline: str , 
+        min_words: int, 
+        max_words: int,
+        targetAudience: str = "general public",
+        articleIntent: str = "informative",
+        writingTone: str = "neutral",
+        writersPersona: str = "expert in the field", 
+        model: str = "gpt-4.1-nano") -> str:
+    
     print("\n\n\nGenerating section...\n\n\n")
     """
     Generates a section of an article based on the provided outline and summary.
@@ -64,8 +86,11 @@ def generate_section(summary: str, section_outline: str, last_paragraph: str, st
         "[STYLE_ANCHORS]": style_anchors, #Style anchors
         "[ARTICLE_OUTLINE]" : full_outline,
         "[MIN_WORDS]" : min_words,
-        "[MAX_WORDS]" : max_words
-
+        "[MAX_WORDS]" : max_words,
+        "[DOELGROEP]": targetAudience, #Target audience for the article
+        "[SCHRIJFSTIJL]" : writingTone, #Writing tone for the article
+        "[ARTIKELINTENTIE]" : articleIntent, #Intent of the article
+        "[WRITERSPERSONA]": writersPersona, #Writers persona for the article
     }
 
     prompt = load_prompt(

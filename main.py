@@ -21,6 +21,10 @@ class SectionedArticleRequest(BaseModel):
     #style_anchors: List[str]
     model: str | None = "gpt-4.1-nano"
     model_summary: str | None = "gpt-4.1-nano"
+    targetAudience: str | None = "general public"
+    articleIntent: str | None = "informative"
+    writingTone: str | None = "neutral"
+    writersPersona: str | None = "expert in the field"
 
 
 @app.post("/generate-sectioned-article")
@@ -29,6 +33,10 @@ def generate_sectioned_article_endpoint(request: SectionedArticleRequest):
         outline=request.outline,
         #style_anchors=request.style_anchors#,
         model=request.model,
-        model_summary=request.model_summary
+        model_summary=request.model_summary,
+        targetgAudience=request.targetAudience,
+        articleIntent=request.articleIntent,
+        writingTone=request.writingTone,
+        writersPersona=request.writersPersona
     )
     return {"article": article}
