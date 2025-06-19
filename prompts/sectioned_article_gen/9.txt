@@ -17,9 +17,9 @@ Schrijf een **inhoudelijk sterke en natuurlijk lezende sectie** die zelfstandig 
 - Eindigt (indien toepasbaar) met een zin die uitnodigt tot actie, nieuwsgierigheid of doorklik
 
 ## Contentbrief
-- **Doelgroep**: [DOELGROEP] (bijv. jonge ondernemers, 25–35 jaar, ambitieus, resultaatgericht)
-- **Stijl**: [SCHRIJFSTIJL] (bijv. direct, persoonlijk, energiek, no-nonsense)
-- **Artikelintentie**: [ARTIKELINTENTIE] (bijv. inspireren tot gedragsverandering, informeren, activeren)
+- **Doelgroep**: [DOELGROEP]
+- **Stijl**: [SCHRIJFSTIJL]
+- **Artikelintentie**: [ARTIKELINTENTIE]
 
 ## Stijlregels
 - **Varieer actief in ritme en structuur.** Gebruik afwisselend korte, gemiddelde en langere zinnen.  
