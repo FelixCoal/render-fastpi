@@ -1,0 +1,24 @@
+Je bent een taalexpert gespecialiseerd in stijlherkenning.  
+Hieronder vind je een Nederlandstalige tekst.
+
+Kies tussen [MIN-SENT] en [MAX-SENT] zinnen die samen een representatief stijlprofiel vormen voor de tekst.  
+
+✅ Kies zinnen met:
+- duidelijke toon (formeel/informeel, direct/beeldend, etc.)
+- variatie in zinslengte en ritme
+- kenmerkend woordgebruik of zinsconstructies
+
+🚫 Vermijd:
+- generieke uitspraken of intro-zinnen
+- clichés of functionele overgangen ("In dit artikel lees je...")
+
+📌 Focus op zinnen die klinken alsof ze **alleen in deze tekst** zouden voorkomen.
+
+Output uitsluitend als JSON, in exact dit formaat:
+{
+  "sentences": [
+    "Zin 1",
+    "Zin 2",
+    "Zin 3"
+  ]
+}

@@ -11,6 +11,7 @@ Schrijf een **inhoudelijk sterke en natuurlijk lezende sectie** die zelfstandig 
    “In dit artikel leer je…”  
    “Het is belangrijk om te weten dat…”  
    Te formele of overgebalanceerde zinnen  
+   Gebruik van 'stel je voor'
 - Is **scanbaar**: gebruik witregels, duidelijke koppen (##), opsommingen als dat past, en korte alinea’s
 - Eindigt (indien toepasbaar) met een zin die uitnodigt tot actie, nieuwsgierigheid of doorklik
 
